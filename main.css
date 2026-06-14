@@ -95,3 +95,55 @@ ul li:hover .overlay-imagem-link {
 body {
     background-color: black;
 }
+
+
+
+/* TABLET / TELAS MÉDIAS */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header button {
+        margin-left: 0;
+    }
+
+    form {
+        padding: 24px 16px;
+    }
+
+    form input,
+    form button {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    ul li {
+        width: 50%;
+        max-width: 50%;
+        height: 260px;
+        max-height: 260px;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 430px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    ul li {
+        width: 100%;
+        max-width: 100%;
+        height: 260px;
+        max-height: 260px;
+        padding: 10px;
+    }
+}
