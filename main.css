@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: black;
+}
+
 header {
     background-color: #5f27cd;
     padding: 16px 0;
@@ -14,7 +18,6 @@ header {
     justify-content: center;
     text-transform: uppercase;
     font-style: italic;
-
 }
 
 header button {
@@ -30,12 +33,10 @@ form {
 
 form h2 {
     margin-bottom: 16px;
-
 }
 
 input, button {
     padding: 8px;
-
 }
 
 button {
@@ -45,7 +46,6 @@ button {
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
-
 }
 
 #botao-cancelar {
@@ -57,17 +57,28 @@ ul {
     flex-wrap: wrap;
 }
 
+/* CARD DA IMAGEM */
 ul li {
+    width: 25%;
     max-width: 25%;
     list-style: none;
     position: relative;
+
+    height: 280px;
     max-height: 280px;
-    overflow-y: hidden;
+
+    overflow: hidden;
 }
 
+/* IMAGEM DENTRO DO CARD */
 ul li img {
-    width: 100%; 
+    width: 100%;
     height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
     padding: 2px;
 }
 
@@ -85,18 +96,11 @@ ul li img {
 .overlay-imagem-link a {
     color: #fff;
     text-decoration: none;
-
 }
 
 ul li:hover .overlay-imagem-link {
     opacity: 1;
 }
-
-body {
-    background-color: black;
-}
-
-
 
 /* TABLET / TELAS MÉDIAS */
 @media (max-width: 768px) {
